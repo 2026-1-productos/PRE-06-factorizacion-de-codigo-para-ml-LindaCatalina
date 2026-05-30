@@ -20,6 +20,7 @@ x_train, x_test, y_train, y_test = prepare_data()
 estimator = KNeighborsRegressor(n_neighbors=5)
 estimator.fit(x_train, y_train)
 save_model(estimator)
+
 print()
 print(estimator, ":", sep="")
 
